@@ -46,10 +46,11 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
-          <a href="#about" className="text-lg text-gray-600 hover:text-blue-600 transition-colors">Timeline</a>
-          <a href="#skills" className="text-lg text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
+          <a href="#hero" className="text-lg text-gray-600 hover:text-blue-600 transition-colors">Home</a>
           <a href="#projects" className="text-lg text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
-          <a href="#contact" className="text-lg text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+          <a href="#timeline" className="text-lg text-gray-600 hover:text-blue-600 transition-colors">Timeline</a>
+          <a href="#skills" className="text-lg text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
+          <a href="#hire-me" className="text-lg text-gray-600 hover:text-blue-600 transition-colors">Hire Me</a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -74,10 +75,11 @@ const Navbar = () => {
           <div className="md:hidden fixed inset-0 top-16 bg-black/10 z-40" onClick={closeMobileMenu}></div>
           <div className="md:hidden absolute top-full right-6 mt-2 bg-white/95 backdrop-blur-md shadow-xl rounded-lg overflow-hidden z-50 min-w-[120px]">
             <div className="flex flex-col py-1">
-              <a href="#about" onClick={closeMobileMenu} className="px-4 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors whitespace-nowrap">Timeline</a>
-              <a href="#skills" onClick={closeMobileMenu} className="px-4 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors whitespace-nowrap">Skills</a>
+              <a href="#hero" onClick={closeMobileMenu} className="px-4 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors whitespace-nowrap">Home</a>
               <a href="#projects" onClick={closeMobileMenu} className="px-4 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors whitespace-nowrap">Projects</a>
-              <a href="#contact" onClick={closeMobileMenu} className="px-4 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors whitespace-nowrap">Contact</a>
+              <a href="#timeline" onClick={closeMobileMenu} className="px-4 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors whitespace-nowrap">Timeline</a>
+              <a href="#skills" onClick={closeMobileMenu} className="px-4 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors whitespace-nowrap">Skills</a>
+              <a href="#hire-me" onClick={closeMobileMenu} className="px-4 py-1.5 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 transition-colors whitespace-nowrap">Hire Me</a>
             </div>
           </div>
         </>
