@@ -37,7 +37,7 @@ const LanguageSwitcher = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-1.5 glass px-3 py-1.5 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 transition-all transform hover:scale-105 shadow-sm hover:shadow-md border border-white/40 text-sm"
       >
-        <span className="text-xl">{currentLanguage.flag}</span>
+        <span className="text-xl inline-flex items-center justify-center" style={{ fontFamily: 'Arial, sans-serif' }}>{currentLanguage.flag}</span>
         <span className="font-medium text-gray-800 text-sm">{currentLanguage.name}</span>
         <svg 
           className={`w-3 h-3 transition-transform ${isOpen ? 'rotate-180' : ''}`}
@@ -50,7 +50,7 @@ const LanguageSwitcher = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-44 glass rounded-lg shadow-xl border border-white/40 overflow-hidden z-50 backdrop-blur-lg">
+        <div className="absolute right-0 mt-2 w-44 glass rounded-lg shadow-xl border border-white/40 overflow-hidden z-[60] backdrop-blur-lg">
           {languages.map((lang) => (
             <button
               key={lang.code}
@@ -59,7 +59,7 @@ const LanguageSwitcher = () => {
                 i18n.language === lang.code ? 'bg-blue-50/50' : ''
               }`}
             >
-              <span className="text-2xl">{lang.flag}</span>
+              <span className="text-2xl inline-flex items-center justify-center" style={{ fontFamily: 'Arial, sans-serif' }}>{lang.flag}</span>
               <span className="font-medium text-gray-800 text-sm">{lang.name}</span>
               {i18n.language === lang.code && (
                 <svg className="w-4 h-4 ml-auto text-blue-600" fill="currentColor" viewBox="0 0 20 20">

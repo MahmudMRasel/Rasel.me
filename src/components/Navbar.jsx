@@ -123,7 +123,7 @@ const Navbar = () => {
       {mobileMenuOpen && (
         <>
           <div className="md:hidden fixed inset-0 top-16 bg-black/10 z-40" onClick={closeMobileMenu}></div>
-          <div className="md:hidden absolute top-full right-6 mt-2 bg-white/95 backdrop-blur-md shadow-xl rounded-lg overflow-hidden z-50 min-w-[120px]">
+          <div className="md:hidden absolute top-full right-6 mt-2 bg-white/95 backdrop-blur-md shadow-xl rounded-lg overflow-visible z-50 min-w-[120px]">
             <div className="flex flex-col py-1">
               <a href="#hero" onClick={closeMobileMenu} className={mobileNavLinkClass('hero')}>{t('nav.home')}</a>
               <a href="#about" onClick={closeMobileMenu} className={mobileNavLinkClass('about')}>{t('nav.about')}</a>
