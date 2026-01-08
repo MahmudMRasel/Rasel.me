@@ -127,12 +127,16 @@ const Projects = () => {
 
   return (
     <section id="projects" className="container mx-auto px-6 py-16">
-      <h2 
-        ref={titleRef}
-        className={`text-4xl font-bold text-gray-900 text-center mb-12 scroll-reveal-up ${titleRevealed ? 'revealed' : ''}`}
-      >
-        Projects
-      </h2>
+      <div className="text-center mb-16">
+        <h2 
+          ref={titleRef}
+          className={`text-5xl md:text-6xl font-extrabold mb-4 scroll-reveal-up ${titleRevealed ? 'revealed' : ''}`}
+        >
+          <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 bg-clip-text text-transparent">My Projects</span>
+        </h2>
+        <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-500 mx-auto rounded-full"></div>
+        <p className="text-gray-600 mt-4 text-lg">Building solutions that matter</p>
+      </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} index={index} />

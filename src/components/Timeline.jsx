@@ -155,12 +155,16 @@ const Timeline = () => {
 
   return (
     <section id="timeline" className="container mx-auto px-6 py-16 relative">
-      <h2 
-        ref={titleRef}
-        className={`text-4xl font-bold text-gray-900 text-center mb-12 scroll-reveal-up ${titleRevealed ? 'revealed' : ''}`}
-      >
-        Timeline
-      </h2>
+      <div className="text-center mb-16">
+        <h2 
+          ref={titleRef}
+          className={`text-5xl md:text-6xl font-extrabold mb-4 scroll-reveal-up ${titleRevealed ? 'revealed' : ''}`}
+        >
+          <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-teal-500 bg-clip-text text-transparent">Timeline</span>
+        </h2>
+        <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-500 mx-auto rounded-full"></div>
+        <p className="text-gray-600 mt-4 text-lg">Experience & Education</p>
+      </div>
       <div className="relative">
         {/* Vertical line for desktop */}
         <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-blue-200 via-blue-400 to-blue-200"></div>

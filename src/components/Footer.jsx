@@ -16,7 +16,7 @@ const Footer = () => {
           </a>
           <span className="text-gray-600">|</span>
           <a 
-            href="https://github.com/rmm2805"
+            href="https://github.com/MahmudMRasel"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-400 transition-colors"
