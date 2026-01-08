@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Inter', 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+  font-family: 'Inter', 'Mukta', 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
 }
 
 /* Glassmorphism effect */
