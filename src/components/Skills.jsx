@@ -70,7 +70,7 @@ const Skills = () => {
     return (
       <div 
         ref={cardRef}
-        className={`group relative glass rounded-3xl p-6 md:p-8 flex flex-col items-center text-center backdrop-blur-lg border border-white/30 hover:border-blue-300 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 scroll-reveal-scale overflow-hidden ${cardRevealed ? 'revealed' : ''}`}
+        className={`group relative glass rounded-2xl md:rounded-3xl p-4 md:p-6 lg:p-8 flex flex-col items-center text-center backdrop-blur-lg border border-white/30 hover:border-blue-300 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:-translate-y-2 scroll-reveal-scale overflow-hidden ${cardRevealed ? 'revealed' : ''}`}
         style={{ transitionDelay: `${index * 0.1}s` }}
       >
         {/* Gradient background on hover */}

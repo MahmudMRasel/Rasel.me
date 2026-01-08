@@ -31,13 +31,25 @@ const LanguageSwitcher = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
+  // Close dropdown when scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      if (isOpen) {
+        setIsOpen(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [isOpen])
+
   return (
     <div className="relative" ref={dropdownRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-1.5 glass px-3 py-1.5 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 transition-all transform hover:scale-105 shadow-sm hover:shadow-md border border-white/40 text-sm"
       >
-        <span className="text-xl inline-flex items-center justify-center" style={{ fontFamily: 'Arial, sans-serif' }}>{currentLanguage.flag}</span>
+        <span className="text-2xl inline-flex items-center justify-center min-w-[24px]" style={{ fontFamily: 'Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji, Arial, sans-serif', lineHeight: '1' }}>{currentLanguage.flag}</span>
         <span className="font-medium text-gray-800 text-sm">{currentLanguage.name}</span>
         <svg 
           className={`w-3 h-3 transition-transform ${isOpen ? 'rotate-180' : ''}`}
@@ -50,16 +62,16 @@ const LanguageSwitcher = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-44 glass rounded-lg shadow-xl border border-white/40 overflow-hidden z-[60] backdrop-blur-lg">
+        <div className="absolute right-0 mt-2 w-44 bg-white/95 backdrop-blur-xl rounded-lg shadow-2xl border border-gray-200 overflow-hidden z-[60]">
           {languages.map((lang) => (
             <button
               key={lang.code}
               onClick={() => changeLanguage(lang.code)}
-              className={`w-full flex items-center gap-3 px-3 py-2.5 hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 transition-all text-sm ${
-                i18n.language === lang.code ? 'bg-blue-50/50' : ''
+              className={`w-full flex items-center gap-3 px-3 py-2.5 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-200 transition-all text-sm ${
+                i18n.language === lang.code ? 'bg-blue-100/70' : ''
               }`}
             >
-              <span className="text-2xl inline-flex items-center justify-center" style={{ fontFamily: 'Arial, sans-serif' }}>{lang.flag}</span>
+              <span className="text-2xl inline-flex items-center justify-center min-w-[28px]" style={{ fontFamily: 'Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji, Arial, sans-serif', lineHeight: '1' }}>{lang.flag}</span>
               <span className="font-medium text-gray-800 text-sm">{lang.name}</span>
               {i18n.language === lang.code && (
                 <svg className="w-4 h-4 ml-auto text-blue-600" fill="currentColor" viewBox="0 0 20 20">

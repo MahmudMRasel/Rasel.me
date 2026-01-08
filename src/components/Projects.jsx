@@ -50,17 +50,17 @@ const Projects = () => {
     return (
       <div 
         ref={cardRef}
-        className={`group glass rounded-2xl p-5 backdrop-blur-lg hover:bg-white/60 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl h-full flex flex-col border border-white/20 hover:border-blue-200 scroll-reveal-scale ${cardRevealed ? 'revealed' : ''}`}
+        className={`group glass rounded-2xl p-4 md:p-6 backdrop-blur-lg hover:bg-white/60 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl h-full flex flex-col border border-white/20 hover:border-blue-200 scroll-reveal-scale ${cardRevealed ? 'revealed' : ''}`}
         style={{ transitionDelay: `${index * 0.15}s` }}
       >
         {/* Header with gradient accent */}
         <div className="mb-3 pb-3 border-b border-gray-200/50">
-          <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors leading-tight">
+          <h3 className="text-base md:text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors leading-tight">
             {project.title}
           </h3>
         </div>
         
-        <p className="text-gray-700 text-sm mb-3 leading-relaxed flex-grow">{project.description}</p>
+        <p className="text-gray-700 text-xs md:text-sm mb-3 leading-relaxed flex-grow">{project.description}</p>
         
         {project.bullets && (
           <ul className="list-none text-xs text-gray-600 space-y-1.5 mb-3">
@@ -119,7 +119,7 @@ const Projects = () => {
         <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-500 mx-auto rounded-full"></div>
         <p className="text-gray-600 mt-4 text-lg">{t('projects.subtitle')}</p>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} index={index} />
         ))}
