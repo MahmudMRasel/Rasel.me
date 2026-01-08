@@ -1,65 +1,36 @@
 import React, { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const Timeline = () => {
+  const { t } = useTranslation()
   const [titleRef, titleRevealed] = useScrollReveal({ threshold: 0.2 })
   const [isCoursesExpanded, setIsCoursesExpanded] = useState(false)
 
   const timelineItems = [
     {
-      date: "June 2025 - Present",
-      title: "AI & UX Research Intern",
-      company: "Digital Ops",
+      date: t('timeline.experience.digitalOps.date'),
+      title: t('timeline.experience.digitalOps.title'),
+      company: t('timeline.experience.digitalOps.company'),
       type: "experience",
-      bullets: [
-        "Evaluate adaptive learning dashboards using multimodal data (clickstream, logs, behavioral signals).",
-        "Analyze datasets using Python to assess predictive models (BKT, DKT, regression, clustering).",
-        "Conduct UX research, usability testing, and engagement analysis.",
-        "Present insights through dashboards and reports for both technical and non-technical audiences."
-      ],
-      tools: ["Python", "Power BI", "Figma", "UX Research"]
+      bullets: t('timeline.experience.digitalOps.bullets', { returnObjects: true }),
+      tools: t('timeline.experience.digitalOps.tools', { returnObjects: true })
     },
     {
-      date: "2023 - 2025",
-      title: "MSc Computer Science",
-      company: "Technical University of Denmark (DTU)",
+      date: t('timeline.education.dtu.date'),
+      title: t('timeline.education.dtu.title'),
+      company: t('timeline.education.dtu.company'),
       type: "education",
-      selectedCourses: [
-        "Computational Tools for Data Science",
-        "Social Data Analysis & Visualization",
-        "Intro to Machine Learning & Data Mining",
-        "User Experience Engineering",
-        "Data Security & System Security"
-      ],
-      allCourses: [
-        "Computational Tools for Data Science",
-        "Social Data Analysis & Visualization",
-        "Intro to Machine Learning & Data Mining",
-        "User Experience Engineering",
-        "Data Security & System Security",
-        "Advanced Algorithms",
-        "Database Systems",
-        "Software Engineering",
-        "Computer Networks",
-        "Distributed Systems",
-        "Artificial Intelligence",
-        "Natural Language Processing",
-        "Computer Vision",
-        "Cloud Computing",
-        "DevOps Practices"
-      ]
+      selectedCourses: t('timeline.education.dtu.courses.selected', { returnObjects: true }),
+      allCourses: t('timeline.education.dtu.courses.all', { returnObjects: true })
     },
     {
-      date: "2021 - 2023",
-      title: "Frontend Developer",
-      company: "Brixoptim",
+      date: t('timeline.experience.brixoptim.date'),
+      title: t('timeline.experience.brixoptim.title'),
+      company: t('timeline.experience.brixoptim.company'),
       type: "experience",
-      bullets: [
-        "Built and maintained responsive UIs using HTML, CSS, Bootstrap, Tailwind, JavaScript.",
-        "Ensured mobile-first design and cross-browser compatibility.",
-        "Managed workflows with Git and performed debugging & usability testing."
-      ],
-      tools: ["HTML", "CSS", "Bootstrap", "Tailwind", "JavaScript", "Git"]
+      bullets: t('timeline.experience.brixoptim.bullets', { returnObjects: true }),
+      tools: t('timeline.experience.brixoptim.tools', { returnObjects: true })
     }
   ]
 
@@ -103,7 +74,7 @@ const Timeline = () => {
             {item.type === 'education' && (
               <>
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-800 mb-2">Selected Coursework:</h4>
+                  <h4 className="text-sm font-semibold text-gray-800 mb-2">{t('timeline.education.dtu.selectedCoursework')}</h4>
                   <ul className={`list-disc ${isLeft ? 'list-inside' : 'list-inside md:list-outside md:ml-4'} text-sm text-gray-600 space-y-1`}>
                     {item.selectedCourses.map((course, i) => (
                       <li key={i}>{course}</li>
@@ -116,7 +87,7 @@ const Timeline = () => {
                     onClick={() => setIsCoursesExpanded(!isCoursesExpanded)}
                     className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-2 transition-colors"
                   >
-                    {isCoursesExpanded ? 'Show Less' : 'View All Courses'}
+                    {isCoursesExpanded ? t('timeline.education.dtu.showLess') : t('timeline.education.dtu.viewAllCourses')}
                     <svg 
                       className={`w-4 h-4 transform transition-transform ${isCoursesExpanded ? 'rotate-180' : ''}`}
                       fill="none" 
@@ -129,7 +100,7 @@ const Timeline = () => {
                   
                   {isCoursesExpanded && (
                     <div className="mt-4 p-4 glass-dark rounded-lg backdrop-blur-sm">
-                      <h4 className="text-sm font-semibold text-gray-800 mb-2">All Courses:</h4>
+                      <h4 className="text-sm font-semibold text-gray-800 mb-2">{t('timeline.education.dtu.allCourses')}</h4>
                       <div className="grid md:grid-cols-2 gap-2">
                         {item.allCourses.map((course, i) => (
                           <div key={i} className="text-sm text-gray-600 flex items-start">
@@ -160,10 +131,10 @@ const Timeline = () => {
           ref={titleRef}
           className={`text-5xl md:text-6xl font-extrabold mb-4 scroll-reveal-up ${titleRevealed ? 'revealed' : ''}`}
         >
-          <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-teal-500 bg-clip-text text-transparent">Timeline</span>
+          <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-teal-500 bg-clip-text text-transparent">{t('timeline.title')}</span>
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-500 mx-auto rounded-full"></div>
-        <p className="text-gray-600 mt-4 text-lg">Experience & Education</p>
+        <p className="text-gray-600 mt-4 text-lg">{t('timeline.subtitle')}</p>
       </div>
       <div className="relative">
         {/* Vertical line for desktop */}

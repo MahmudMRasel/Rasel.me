@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import logo from '../images/logo.svg'
+import LanguageSwitcher from './LanguageSwitcher'
+import { useTranslation } from 'react-i18next'
 
 // Logo component - image logo
 const Logo = () => {
@@ -15,6 +17,7 @@ const Logo = () => {
 }
 
 const Navbar = () => {
+  const { t } = useTranslation()
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('hero')
@@ -90,13 +93,14 @@ const Navbar = () => {
         </a>
         
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-2">
-          <a href="#hero" className={navLinkClass('hero')}>Home</a>
-          <a href="#about" className={navLinkClass('about')}>About Me</a>
-          <a href="#timeline" className={navLinkClass('timeline')}>Timeline</a>
-          <a href="#skills" className={navLinkClass('skills')}>Skills</a>
-          <a href="#projects" className={navLinkClass('projects')}>Projects</a>
-          <a href="#hire-me" className={navLinkClass('hire-me')}>Hire Me</a>
+        <div className="hidden md:flex items-center space-x-2">
+          <a href="#hero" className={navLinkClass('hero')}>{t('nav.home')}</a>
+          <a href="#about" className={navLinkClass('about')}>{t('nav.about')}</a>
+          <a href="#timeline" className={navLinkClass('timeline')}>{t('nav.timeline')}</a>
+          <a href="#skills" className={navLinkClass('skills')}>{t('nav.skills')}</a>
+          <a href="#projects" className={navLinkClass('projects')}>{t('nav.projects')}</a>
+          <a href="#hire-me" className={navLinkClass('hire-me')}>{t('nav.hire')}</a>
+          <LanguageSwitcher />
         </div>
 
         {/* Mobile Menu Button */}
@@ -121,12 +125,15 @@ const Navbar = () => {
           <div className="md:hidden fixed inset-0 top-16 bg-black/10 z-40" onClick={closeMobileMenu}></div>
           <div className="md:hidden absolute top-full right-6 mt-2 bg-white/95 backdrop-blur-md shadow-xl rounded-lg overflow-hidden z-50 min-w-[120px]">
             <div className="flex flex-col py-1">
-              <a href="#hero" onClick={closeMobileMenu} className={mobileNavLinkClass('hero')}>Home</a>
-              <a href="#about" onClick={closeMobileMenu} className={mobileNavLinkClass('about')}>About Me</a>
-              <a href="#timeline" onClick={closeMobileMenu} className={mobileNavLinkClass('timeline')}>Timeline</a>
-              <a href="#skills" onClick={closeMobileMenu} className={mobileNavLinkClass('skills')}>Skills</a>
-              <a href="#projects" onClick={closeMobileMenu} className={mobileNavLinkClass('projects')}>Projects</a>
-              <a href="#hire-me" onClick={closeMobileMenu} className={mobileNavLinkClass('hire-me')}>Hire Me</a>
+              <a href="#hero" onClick={closeMobileMenu} className={mobileNavLinkClass('hero')}>{t('nav.home')}</a>
+              <a href="#about" onClick={closeMobileMenu} className={mobileNavLinkClass('about')}>{t('nav.about')}</a>
+              <a href="#timeline" onClick={closeMobileMenu} className={mobileNavLinkClass('timeline')}>{t('nav.timeline')}</a>
+              <a href="#skills" onClick={closeMobileMenu} className={mobileNavLinkClass('skills')}>{t('nav.skills')}</a>
+              <a href="#projects" onClick={closeMobileMenu} className={mobileNavLinkClass('projects')}>{t('nav.projects')}</a>
+              <a href="#hire-me" onClick={closeMobileMenu} className={mobileNavLinkClass('hire-me')}>{t('nav.hire')}</a>
+              <div className="px-4 py-2 border-t border-gray-200">
+                <LanguageSwitcher />
+              </div>
             </div>
           </div>
         </>

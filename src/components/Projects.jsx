@@ -1,63 +1,45 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const Projects = () => {
+  const { t } = useTranslation()
   const [titleRef, titleRevealed] = useScrollReveal({ threshold: 0.2 })
+  
   const projects = [
     {
-      title: "StriveAI: Adaptive Learning Platform (Master's Thesis)",
-      description: "Designed UX architecture for an AI-driven learning dashboard (adaptive algorithms: BKT, DKT) and GenAI-based generative nudges. Delivered final prototype and research recommendations.",
-      bullets: [
-        "Evaluated adaptive algorithms (BKT, DKT) through behavioral data analysis",
-        "Designed nudge systems using GenAI",
-        "Created UX prototypes for student dashboards"
-      ],
-      tools: ["Python", "UX Research", "Figma", "GenAI"],
+      title: t('projects.items.striveAI.title'),
+      description: t('projects.items.striveAI.description'),
+      bullets: t('projects.items.striveAI.bullets', { returnObjects: true }),
+      tools: t('projects.items.striveAI.tools', { returnObjects: true }),
       url: null
     },
     {
-      title: "Hoursly: Time Tracking & Budgeting Web App",
-      description: "Built a time-tracking app featuring secure login, project tracking, categorized budgets, CSV export, and custom notifications with sound/visual alerts.",
-      bullets: [
-        "Secure user authentication and session management",
-        "Real-time project time tracking with category filters",
-        "Budget tracking with CSV data export",
-        "Custom notifications with sound and visual alerts"
-      ],
-      tools: ["HTML", "CSS", "JavaScript", "Netlify"],
+      title: t('projects.items.hoursly.title'),
+      description: t('projects.items.hoursly.description'),
+      bullets: t('projects.items.hoursly.bullets', { returnObjects: true }),
+      tools: t('projects.items.hoursly.tools', { returnObjects: true }),
       url: "https://hoursly-rm7.netlify.app"
     },
     {
-      title: "Process Mining & Predictive Analytics",
-      description: "Applied process mining to supply chain datasets, built classification models (Decision Tree, Random Forest, XGBoost) to predict delays, and conducted extensive exploratory data analysis.",
-      bullets: [
-        "Process mining on supply chain event logs",
-        "Built Decision Tree, Random Forest, XGBoost models",
-        "Exploratory data analysis and feature engineering"
-      ],
-      tools: ["Python", "Scikit-learn", "PM4Py", "Pandas", "NumPy"],
+      title: t('projects.items.processMining.title'),
+      description: t('projects.items.processMining.description'),
+      bullets: t('projects.items.processMining.bullets', { returnObjects: true }),
+      tools: t('projects.items.processMining.tools', { returnObjects: true }),
       url: null
     },
     {
-      title: "Data Security Research: Two-Factor Authentication & Phishing Detection",
-      description: "Researched authentication security protocols (FIDO2, TOTP, SMS) and phishing detection systems. Delivered a research paper and presentation on best practices and system design.",
-      bullets: [
-        "Evaluated FIDO2, TOTP, SMS-based 2FA protocols",
-        "Analyzed phishing detection mechanisms",
-        "Research paper and presentation delivery"
-      ],
-      tools: ["Research", "Security Protocols", "Documentation"],
+      title: t('projects.items.dataSecurity.title'),
+      description: t('projects.items.dataSecurity.description'),
+      bullets: t('projects.items.dataSecurity.bullets', { returnObjects: true }),
+      tools: t('projects.items.dataSecurity.tools', { returnObjects: true }),
       url: null
     },
     {
-      title: "Computational Tools for Data Science",
-      description: "Delivered a full research project covering data cleaning, NLP (NER, lemmatization), classification, graph network analysis, and visualization techniques using Python.",
-      bullets: [
-        "Data preprocessing, cleaning, and feature extraction",
-        "NLP: NER, lemmatization, text classification",
-        "Graph network analysis and visualization"
-      ],
-      tools: ["Python", "NetworkX", "SpaCy", "Matplotlib", "Seaborn"],
+      title: t('projects.items.computationalTools.title'),
+      description: t('projects.items.computationalTools.description'),
+      bullets: t('projects.items.computationalTools.bullets', { returnObjects: true }),
+      tools: t('projects.items.computationalTools.tools', { returnObjects: true }),
       url: null
     }
   ]
@@ -114,7 +96,7 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold text-sm group-hover:gap-3 transition-all"
             >
-              <span>Live Demo</span>
+              <span>{t('projects.liveDemo')}</span>
               <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -132,10 +114,10 @@ const Projects = () => {
           ref={titleRef}
           className={`text-5xl md:text-6xl font-extrabold mb-4 scroll-reveal-up ${titleRevealed ? 'revealed' : ''}`}
         >
-          <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 bg-clip-text text-transparent">My Projects</span>
+          <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 bg-clip-text text-transparent">{t('projects.title')}</span>
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-teal-500 mx-auto rounded-full"></div>
-        <p className="text-gray-600 mt-4 text-lg">Building solutions that matter</p>
+        <p className="text-gray-600 mt-4 text-lg">{t('projects.subtitle')}</p>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (

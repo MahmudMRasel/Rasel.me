@@ -1,0 +1,251 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "timeline": "Timeline",
+    "skills": "Skills",
+    "projects": "Projects",
+    "hire": "Hire Me"
+  },
+  "hero": {
+    "headline": "Rasel Mahmud — I can turn data into decisions.",
+    "roles": {
+      "dataAnalysis": "Data Analysis",
+      "frontendDev": "Frontend Development",
+      "uxResearch": "UX Research"
+    },
+    "buttons": {
+      "viewProjects": "View Projects",
+      "downloadCV": "Download CV"
+    },
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Email"
+    },
+    "badges": {
+      "education": "MSc CS @ DTU",
+      "analyst": "Data Analyst / Power BI",
+      "frontend": "Frontend Developer"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Who I am & what I do",
+    "description": "With a background in Frontend Development, I naturally gravitated toward Analytics & Power Bi  because I enjoy not only building interfaces, but also understanding what the numbers mean. I hold an MSc in Computer Science from the Technical University of Denmark (DTU), Copenhagen. I turn complex datasets into clear visuals, practical KPIs, and interactive dashboards that people can use without needing extra explanations. I'm seeking a full-time role where I can help teams make better, faster decisions through data."
+  },
+  "timeline": {
+    "title": "Experience & Education",
+    "subtitle": "My professional journey",
+    "experience": {
+      "digitalOps": {
+        "date": "June 2025 - Present",
+        "title": "AI & UX Research Intern",
+        "company": "Digital Ops",
+        "bullets": [
+          "Evaluate adaptive learning dashboards using multimodal data (clickstream, logs, behavioral signals).",
+          "Analyze datasets using Python to assess predictive models (BKT, DKT, regression, clustering).",
+          "Conduct UX research, usability testing, and engagement analysis.",
+          "Present insights through dashboards and reports for both technical and non-technical audiences."
+        ],
+        "tools": ["Python", "Power BI", "Figma", "UX Research"]
+      },
+      "brixoptim": {
+        "date": "2021 - 2023",
+        "title": "Frontend Developer",
+        "company": "Brixoptim",
+        "bullets": [
+          "Built and maintained responsive UIs using HTML, CSS, Bootstrap, Tailwind, JavaScript.",
+          "Ensured mobile-first design and cross-browser compatibility.",
+          "Managed workflows with Git and performed debugging & usability testing."
+        ],
+        "tools": ["HTML", "CSS", "Bootstrap", "Tailwind", "JavaScript", "Git"]
+      }
+    },
+    "education": {
+      "dtu": {
+        "date": "2023 - 2025",
+        "title": "MSc Computer Science",
+        "company": "Technical University of Denmark (DTU)",
+        "selectedCoursework": "Selected Coursework:",
+        "viewAllCourses": "View All Courses",
+        "showLess": "Show Less",
+        "allCourses": "All Courses:",
+        "courses": {
+          "selected": [
+            "Computational Tools for Data Science",
+            "Social Data Analysis & Visualization",
+            "Intro to Machine Learning & Data Mining",
+            "User Experience Engineering",
+            "Data Security & System Security"
+          ],
+          "all": [
+            "Computational Tools for Data Science",
+            "Social Data Analysis & Visualization",
+            "Intro to Machine Learning & Data Mining",
+            "User Experience Engineering",
+            "Data Security & System Security",
+            "Advanced Algorithms",
+            "Database Systems",
+            "Software Engineering",
+            "Computer Networks",
+            "Distributed Systems",
+            "Artificial Intelligence",
+            "Natural Language Processing",
+            "Computer Vision",
+            "Cloud Computing",
+            "DevOps Practices"
+          ]
+        }
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "subtitle": "Tools I work with",
+    "categories": {
+      "analytics": {
+        "title": "Analytics",
+        "items": [
+          "Power BI (DAX, Power Query)",
+          "SQL",
+          "Excel",
+          "KPI Dashboards",
+          "Reporting"
+        ]
+      },
+      "dataVisualization": {
+        "title": "Data Visualization",
+        "items": [
+          "Python",
+          "Pandas",
+          "NumPy",
+          "Jupyter",
+          "EDA",
+          "Data Cleaning",
+          "Matplotlib",
+          "Seaborn",
+          "Plotly"
+        ]
+      },
+      "machineLearning": {
+        "title": "Machine Learning",
+        "items": [
+          "scikit-learn",
+          "XGBoost",
+          "Classification",
+          "Feature Engineering",
+          "Tree Models (Decision Trees, Random Forest)"
+        ]
+      },
+      "frontend": {
+        "title": "Frontend",
+        "items": [
+          "HTML",
+          "CSS",
+          "Tailwind CSS",
+          "Bootstrap",
+          "JavaScript",
+          "Responsive Design"
+        ]
+      },
+      "uxResearch": {
+        "title": "UX & Research",
+        "items": [
+          "Figma",
+          "User Research",
+          "Usability Testing",
+          "Heuristic Evaluation"
+        ]
+      },
+      "tools": {
+        "title": "Tools & Specialized",
+        "items": [
+          "Git",
+          "Netlify",
+          "PM4Py",
+          "NetworkX",
+          "spaCy"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Building solutions that matter",
+    "liveDemo": "Live Demo",
+    "items": {
+      "striveAI": {
+        "title": "StriveAI: Adaptive Learning Platform (Master's Thesis)",
+        "description": "Designed UX architecture for an AI-driven learning dashboard (adaptive algorithms: BKT, DKT) and GenAI-based generative nudges. Delivered final prototype and research recommendations.",
+        "bullets": [
+          "Evaluated adaptive algorithms (BKT, DKT) through behavioral data analysis",
+          "Designed nudge systems using GenAI",
+          "Created UX prototypes for student dashboards"
+        ],
+        "tools": ["Python", "UX Research", "Figma", "GenAI"]
+      },
+      "hoursly": {
+        "title": "Hoursly: Time Tracking & Budgeting Web App",
+        "description": "Built a time-tracking app featuring secure login, project tracking, categorized budgets, CSV export, and custom notifications with sound/visual alerts.",
+        "bullets": [
+          "Secure user authentication and session management",
+          "Real-time project time tracking with category filters",
+          "Budget tracking with CSV data export",
+          "Custom notifications with sound and visual alerts"
+        ],
+        "tools": ["HTML", "CSS", "JavaScript", "Netlify"]
+      },
+      "processMining": {
+        "title": "Process Mining & Predictive Analytics",
+        "description": "Applied process mining to supply chain datasets, built classification models (Decision Tree, Random Forest, XGBoost) to predict delays, and conducted extensive exploratory data analysis.",
+        "bullets": [
+          "Process mining on supply chain event logs",
+          "Built Decision Tree, Random Forest, XGBoost models",
+          "Exploratory data analysis and feature engineering"
+        ],
+        "tools": ["Python", "Scikit-learn", "PM4Py", "Pandas", "NumPy"]
+      },
+      "dataSecurity": {
+        "title": "Data Security Research: Two-Factor Authentication & Phishing Detection",
+        "description": "Researched authentication security protocols (FIDO2, TOTP, SMS) and phishing detection systems. Delivered a research paper and presentation on best practices and system design.",
+        "bullets": [
+          "Evaluated FIDO2, TOTP, SMS-based 2FA protocols",
+          "Analyzed phishing detection mechanisms",
+          "Research paper and presentation delivery"
+        ],
+        "tools": ["Research", "Security Protocols", "Documentation"]
+      },
+      "computationalTools": {
+        "title": "Computational Tools for Data Science",
+        "description": "Delivered a full research project covering data cleaning, NLP (NER, lemmatization), classification, graph network analysis, and visualization techniques using Python.",
+        "bullets": [
+          "Data preprocessing, cleaning, and feature extraction",
+          "NLP: NER, lemmatization, text classification",
+          "Graph network analysis and visualization"
+        ],
+        "tools": ["Python", "NetworkX", "SpaCy", "Matplotlib", "Seaborn"]
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "subtitle": "Where data, development, and design intersect",
+    "description": "I'm open to roles in Data Analytics, Frontend Development, or UX Research—especially where these areas overlap. If you think I could be a good fit for your team, I'd love to connect.",
+    "connectWith": "Connect With Me",
+    "buttons": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "downloadCV": "Download CV",
+      "email": "Write Me"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Md Rasel Mahmud • Copenhagen, Denmark",
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "Email"
+    }
+  }
+}
