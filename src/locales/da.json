@@ -1,0 +1,252 @@
+{
+  "nav": {
+    "home": "Hjem",
+    "about": "Om Mig",
+    "timeline": "Tidslinje",
+    "skills": "Færdigheder",
+    "projects": "Projekter",
+    "hire": "Ansæt Mig"
+  },
+  "hero": {
+    "headline": "Rasel Mahmud — Dataanalytiker, der omsætter komplekse data til klare konklusioner.",
+    "roles": {
+      "dataAnalysis": "Dataanalyse",
+      "machineLearning": "Anvendt maskinlæring",
+      "documentAnalytics": "Storskala dokumentanalyse"
+    },
+    "buttons": {
+      "viewProjects": "Se projekter",
+      "downloadCV": "Hent CV"
+    },
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "E-mail"
+    },
+    "badges": {
+      "education": "MSc CSE @ DTU · 2023–2026",
+      "analyst": "Python · Datakvalitet · Modellevaluering",
+      "thesis": "943 specialer analyseret",
+      "frontend": "Frontend-erfaring"
+    }
+  },
+  "about": {
+    "title": "Om mig",
+    "subtitle": "Hvem jeg er, og hvad jeg laver",
+    "description": "Med en baggrund i frontend-udvikling gravede jeg naturligt mod analyse og Power BI, fordi jeg nyder både at bygge brugergrænseflader og forstå, hvad tallene fortæller. Jeg har en kandidatgrad i datalogi fra Danmarks Tekniske Universitet (DTU), København. Jeg omdanner komplekse datasæt til tydelige visualiseringer, praktiske KPI'er og interaktive dashboards, som folk kan bruge uden ekstra forklaring. Jeg søger en fuldtidsstilling, hvor jeg kan hjælpe teams med at træffe bedre og hurtigere beslutninger gennem data."
+  },
+  "timeline": {
+    "title": "Erfaring & Uddannelse",
+    "subtitle": "Min professionelle rejse",
+    "experience": {
+      "digitalOps": {
+        "date": "Juni 2025 - Nu",
+        "title": "AI & UX Research Praktikant",
+        "company": "Digital Ops",
+        "bullets": [
+          "Evaluerer adaptive læringsdashboards ved hjælp af multimodale data (klikstream, logfiler, adfærdssignaler).",
+          "Analyserer datasæt ved hjælp af Python for at vurdere prædiktive modeller (BKT, DKT, regression, clustering).",
+          "Udfører UX-forskning, brugbarhedstest og engagementsanalyse.",
+          "Præsenterer indsigter gennem dashboards og rapporter for både tekniske og ikke-tekniske målgrupper."
+        ],
+        "tools": ["Python", "Power BI", "Figma", "UX Forskning"]
+      },
+      "brixoptim": {
+        "date": "2021 - 2023",
+        "title": "Frontend Udvikler",
+        "company": "Brixoptim",
+        "bullets": [
+          "Byggede og vedligeholdt responsive brugergrænseflader ved hjælp af HTML, CSS, Bootstrap, Tailwind, JavaScript.",
+          "Sikrede mobile-first design og kompatibilitet på tværs af browsere.",
+          "Administrerede arbejdsgange med Git og udførte fejlfinding og brugbarhedstest."
+        ],
+        "tools": ["HTML", "CSS", "Bootstrap", "Tailwind", "JavaScript", "Git"]
+      }
+    },
+    "education": {
+      "dtu": {
+        "date": "2023 - 2025",
+        "title": "Cand.scient. i Datalogi",
+        "company": "Danmarks Tekniske Universitet (DTU)",
+        "selectedCoursework": "Udvalgte Kurser:",
+        "viewAllCourses": "Se Alle Kurser",
+        "showLess": "Vis Mindre",
+        "allCourses": "Alle Kurser:",
+        "courses": {
+          "selected": [
+            "Beregningsværktøjer til Datavidenskab",
+            "Social Dataanalyse & Visualisering",
+            "Introduktion til Maskinlæring & Data Mining",
+            "Brugeroplevelse Engineering",
+            "Datasikkerhed & Systemsikkerhed"
+          ],
+          "all": [
+            "Beregningsværktøjer til Datavidenskab",
+            "Social Dataanalyse & Visualisering",
+            "Introduktion til Maskinlæring & Data Mining",
+            "Brugeroplevelse Engineering",
+            "Datasikkerhed & Systemsikkerhed",
+            "Avancerede Algoritmer",
+            "Databasesystemer",
+            "Softwareudvikling",
+            "Computernetværk",
+            "Distribuerede Systemer",
+            "Kunstig Intelligens",
+            "Naturlig Sprogbehandling",
+            "Computer Vision",
+            "Cloud Computing",
+            "DevOps Praksis"
+          ]
+        }
+      }
+    }
+  },
+  "skills": {
+    "title": "Færdigheder & Ekspertise",
+    "subtitle": "Værktøjer jeg arbejder med",
+    "categories": {
+      "analytics": {
+        "title": "Analytics",
+        "items": [
+          "Power BI (DAX, Power Query)",
+          "SQL",
+          "Excel",
+          "KPI Dashboards",
+          "Rapportering"
+        ]
+      },
+      "dataVisualization": {
+        "title": "Datavisualisering",
+        "items": [
+          "Python",
+          "Pandas",
+          "NumPy",
+          "Jupyter",
+          "EDA",
+          "Datarensning",
+          "Matplotlib",
+          "Seaborn",
+          "Plotly"
+        ]
+      },
+      "machineLearning": {
+        "title": "Maskinlæring",
+        "items": [
+          "scikit-learn",
+          "XGBoost",
+          "Klassificering",
+          "Feature Engineering",
+          "Træmodeller (Beslutningstræer, Random Forest)"
+        ]
+      },
+      "frontend": {
+        "title": "Frontend",
+        "items": [
+          "HTML",
+          "CSS",
+          "Tailwind CSS",
+          "Bootstrap",
+          "JavaScript",
+          "Responsivt Design"
+        ]
+      },
+      "uxResearch": {
+        "title": "UX & Forskning",
+        "items": [
+          "Figma",
+          "Brugerforskning",
+          "Brugbarhedstest",
+          "Heuristisk Evaluering"
+        ]
+      },
+      "tools": {
+        "title": "Værktøjer & Specialiseret",
+        "items": [
+          "Git",
+          "Netlify",
+          "PM4Py",
+          "NetworkX",
+          "spaCy"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Mine Projekter",
+    "subtitle": "Opbygning af løsninger der betyder noget",
+    "liveDemo": "Live Demo",
+    "items": {
+      "striveAI": {
+        "title": "StriveAI: Adaptiv Læringsplatform (Kandidatspeciale)",
+        "description": "Designede UX-arkitektur til et AI-drevet lærings-dashboard (adaptive algoritmer: BKT, DKT) og GenAI-baserede generative puf. Leverede endelig prototype og forskningsanbefalinger.",
+        "bullets": [
+          "Evaluerede adaptive algoritmer (BKT, DKT) gennem adfærdsdataanalyse",
+          "Designede puf-systemer ved hjælp af GenAI",
+          "Oprettede UX-prototyper til studerende dashboards"
+        ],
+        "tools": ["Python", "UX Forskning", "Figma", "GenAI"]
+      },
+      "hoursly": {
+        "title": "Hoursly: Tidssporings- og Budgetteringswebapp",
+        "description": "Byggede en tidssporingsapp med sikker login, projektstyring, kategoriserede budgetter, CSV-eksport og brugerdefinerede notifikationer med lyd/visuelle advarsler.",
+        "bullets": [
+          "Sikker brugerautentificering og sessionsstyring",
+          "Realtids projekttidssporing med kategorifiltre",
+          "Budgetsporing med CSV-dataeksport",
+          "Brugerdefinerede notifikationer med lyd og visuelle advarsler"
+        ],
+        "tools": ["HTML", "CSS", "JavaScript", "Netlify"]
+      },
+      "processMining": {
+        "title": "Procesudvinding & Prædiktiv Analyse",
+        "description": "Anvendte procesudvinding til forsyningskæde-datasæt, byggede klassifikationsmodeller (Beslutningstræ, Random Forest, XGBoost) til at forudsige forsinkelser og udførte omfattende eksplorativ dataanalyse.",
+        "bullets": [
+          "Procesudvinding på forsyningskæde hændelseslogfiler",
+          "Byggede Beslutningstræ, Random Forest, XGBoost modeller",
+          "Eksplorativ dataanalyse og feature engineering"
+        ],
+        "tools": ["Python", "Scikit-learn", "PM4Py", "Pandas", "NumPy"]
+      },
+      "dataSecurity": {
+        "title": "Datasikkerhedsforskning: To-Faktor Autentificering & Phishing-detektering",
+        "description": "Forsket i autentificeringssikkerhedsprotokoller (FIDO2, TOTP, SMS) og phishing-detekteringssystemer. Leverede en forskningsartikel og præsentation om best practices og systemdesign.",
+        "bullets": [
+          "Evaluerede FIDO2, TOTP, SMS-baserede 2FA-protokoller",
+          "Analyserede phishing-detekteringsmekanismer",
+          "Forskningsartikel og præsentationslevering"
+        ],
+        "tools": ["Forskning", "Sikkerhedsprotokoller", "Dokumentation"]
+      },
+      "computationalTools": {
+        "title": "Beregningsværktøjer til Datavidenskab",
+        "description": "Leverede et fuldt forskningsprojekt, der dækkede datarensning, NLP (NER, lemmatisering), klassifikation, grafnetværksanalyse og visualiseringsteknikker ved hjælp af Python.",
+        "bullets": [
+          "Dataforbehandling, rensning og feature-udtrækning",
+          "NLP: NER, lemmatisering, tekstklassificering",
+          "Grafnetværksanalyse og visualisering"
+        ],
+        "tools": ["Python", "NetworkX", "SpaCy", "Matplotlib", "Seaborn"]
+      }
+    }
+  },
+  "contact": {
+    "title": "Lad os samarbejde",
+    "subtitle": "Hvor data, udvikling og design mødes",
+    "description": "Jeg er åben for stillinger inden for dataanalyse, frontend-udvikling eller UX-forskning — især hvor disse områder overlapper. Hvis du tror, jeg kunne passe godt til dit team, vil jeg gerne høre fra dig.",
+    "connectWith": "Kontakt mig",
+    "buttons": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "downloadCV": "Hent CV",
+      "email": "Send besked"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Md Rasel Mahmud • København, Danmark",
+    "links": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "email": "E-mail"
+    }
+  }
+}
