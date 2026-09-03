@@ -46,14 +46,14 @@
       "digitalOps": {
         "date": "June 2025 - January 2026",
         "title": "AI & UX Research Intern",
-        "company": "Digital Ops",
+        "company": "StriveAI | Digital Ops",
         "bullets": [
-          "Evaluate adaptive learning dashboards using multimodal data (clickstream, logs, behavioral signals).",
-          "Analyze datasets using Python to assess predictive models (BKT, DKT, regression, clustering).",
-          "Conduct UX research, usability testing, and engagement analysis.",
-          "Present insights through dashboards and reports for both technical and non-technical audiences."
+          "Evaluated an adaptive learning dashboard using clickstream data, system logs, and behavioural signals.",
+          "Analysed multimodal session data in Python using clustering, engagement indicators, and Bayesian Knowledge Tracing.",
+          "Conducted UX analysis and improved dashboard interfaces and user flows using Figma.",
+          "Presented findings through interactive dashboards, data visualisations, and reports for technical and non-technical audiences."
         ],
-        "tools": ["Python", "Figma", "UX Research"]
+        "tools": ["Python", "Figma", "Data Analysis"]
       },
       "brixoptim": {
         "date": "2021 - 2023",
@@ -106,7 +106,7 @@
       "bsc": {
         "date": "2017 - 2020",
         "title": "BSc Computer Science and Engineering",
-        "company": "Green University of Bangladesh",
+        "company": "",
         "selectedCoursework": "Selected Coursework:",
         "viewAllCourses": "View All Courses",
         "showLess": "Show Less",

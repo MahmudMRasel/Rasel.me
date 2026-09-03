@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 const Timeline = () => {
   const { t } = useTranslation()
   const [titleRef, titleRevealed] = useScrollReveal({ threshold: 0.2 })
-  const [isCoursesExpanded, setIsCoursesExpanded] = useState(false)
 
   const timelineItems = [
     {
@@ -21,8 +20,7 @@ const Timeline = () => {
       title: t('timeline.education.dtu.title'),
       company: t('timeline.education.dtu.company'),
       type: "education",
-      selectedCourses: t('timeline.education.dtu.courses.selected', { returnObjects: true }),
-      allCourses: t('timeline.education.dtu.courses.all', { returnObjects: true })
+      selectedCourses: t('timeline.education.dtu.courses.selected', { returnObjects: true })
     },
     {
       date: t('timeline.experience.brixoptim.date'),
@@ -37,8 +35,7 @@ const Timeline = () => {
       title: t('timeline.education.bsc.title'),
       company: t('timeline.education.bsc.company'),
       type: "education",
-      selectedCourses: t('timeline.education.bsc.courses.selected', { returnObjects: true }),
-      allCourses: t('timeline.education.bsc.courses.all', { returnObjects: true })
+      selectedCourses: t('timeline.education.bsc.courses.selected', { returnObjects: true })
     }
   ]
 
@@ -58,7 +55,7 @@ const Timeline = () => {
           <div className="glass rounded-xl p-6 backdrop-blur-lg hover:bg-white/40 transition-all transform hover:scale-105 hover:shadow-xl">
             <p className="text-sm text-gray-600 mb-1">{item.date}</p>
             <h3 className="text-xl font-semibold text-gray-900 mb-1">{item.title}</h3>
-            <p className="text-md text-blue-600 font-medium mb-3">{item.company}</p>
+            {item.company && <p className="text-md text-blue-600 font-medium mb-3">{item.company}</p>}
             
             {item.type === 'experience' && (
               <>
@@ -88,37 +85,6 @@ const Timeline = () => {
                       <li key={i}>{course}</li>
                     ))}
                   </ul>
-                </div>
-                
-                <div className="mt-4">
-                  <button
-                    onClick={() => setIsCoursesExpanded(!isCoursesExpanded)}
-                    className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-2 transition-colors"
-                  >
-                    {isCoursesExpanded ? t('timeline.education.dtu.showLess') : t('timeline.education.dtu.viewAllCourses')}
-                    <svg 
-                      className={`w-4 h-4 transform transition-transform ${isCoursesExpanded ? 'rotate-180' : ''}`}
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-                  
-                  {isCoursesExpanded && (
-                    <div className="mt-4 p-4 glass-dark rounded-lg backdrop-blur-sm">
-                      <h4 className="text-sm font-semibold text-gray-800 mb-2">{t('timeline.education.dtu.allCourses')}</h4>
-                      <div className="grid md:grid-cols-2 gap-2">
-                        {item.allCourses.map((course, i) => (
-                          <div key={i} className="text-sm text-gray-600 flex items-start">
-                            <span className="text-blue-600 mr-2">•</span>
-                            <span>{course}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
                 </div>
               </>
             )}
