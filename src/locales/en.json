@@ -33,14 +33,18 @@
   "about": {
     "title": "About Me",
     "subtitle": "Who I am & what I do",
-    "description": "With a background in Frontend Development, I naturally gravitated toward Analytics & Power Bi  because I enjoy not only building interfaces, but also understanding what the numbers mean. I hold an MSc in Computer Science from the Technical University of Denmark (DTU), Copenhagen. I turn complex datasets into clear visuals, practical KPIs, and interactive dashboards that people can use without needing extra explanations. I'm seeking a full-time role where I can help teams make better, faster decisions through data."
+    "description": [
+      "My background in computer science has allowed me to work across software development, data analysis and research. I became particularly interested in understanding data, testing assumptions and explaining why a result occurs.",
+      "During my MSc in Computer Science and Engineering at DTU, I worked with machine learning, process mining, social data analysis and computational data science. My master's thesis took this further through a large-scale research project covering document processing, classification, manual validation and statistical evaluation.",
+      "I am now building my career in Data Analysis, with a focus on research data analysis and applied machine learning. My software development background helps me approach analytical problems with a structured, implementation-focused mindset."
+    ]
   },
   "timeline": {
     "title": "Experience & Education",
     "subtitle": "My professional journey",
     "experience": {
       "digitalOps": {
-        "date": "June 2025 - Present",
+        "date": "June 2025 - January 2026",
         "title": "AI & UX Research Intern",
         "company": "Digital Ops",
         "bullets": [
@@ -49,7 +53,7 @@
           "Conduct UX research, usability testing, and engagement analysis.",
           "Present insights through dashboards and reports for both technical and non-technical audiences."
         ],
-        "tools": ["Python", "Power BI", "Figma", "UX Research"]
+        "tools": ["Python", "Figma", "UX Research"]
       },
       "brixoptim": {
         "date": "2021 - 2023",
@@ -65,8 +69,8 @@
     },
     "education": {
       "dtu": {
-        "date": "2023 - 2025",
-        "title": "MSc Computer Science",
+        "date": "2023 - 2026",
+        "title": "MSc Computer Science and Engineering",
         "company": "Technical University of Denmark (DTU)",
         "selectedCoursework": "Selected Coursework:",
         "viewAllCourses": "View All Courses",
@@ -78,7 +82,7 @@
             "Social Data Analysis & Visualization",
             "Intro to Machine Learning & Data Mining",
             "User Experience Engineering",
-            "Data Security & System Security"
+            "Process Mining"
           ],
           "all": [
             "Computational Tools for Data Science",
@@ -98,6 +102,31 @@
             "DevOps Practices"
           ]
         }
+      },
+      "bsc": {
+        "date": "2017 - 2020",
+        "title": "BSc Computer Science and Engineering",
+        "company": "Green University of Bangladesh",
+        "selectedCoursework": "Selected Coursework:",
+        "viewAllCourses": "View All Courses",
+        "showLess": "Show Less",
+        "allCourses": "All Courses:",
+        "courses": {
+          "selected": [
+            "Artificial Intelligence",
+            "Database Systems",
+            "Statistics and Probability",
+            "Numerical Methods",
+            "Data Structures and Algorithms"
+          ],
+          "all": [
+            "Artificial Intelligence",
+            "Database Systems",
+            "Statistics and Probability",
+            "Numerical Methods",
+            "Data Structures and Algorithms"
+          ]
+        }
       }
     }
   },
@@ -106,47 +135,44 @@
     "subtitle": "Tools I work with",
     "categories": {
       "analytics": {
-        "title": "Analytics",
+        "title": "Data Analysis",
         "items": [
-          "Power BI (DAX, Power Query)",
-          "SQL",
+          "Python",
+          "Pandas",
+          "NumPy",
           "Excel",
-          "KPI Dashboards",
-          "Reporting"
+          "Jupyter Notebook"
         ]
       },
       "dataVisualization": {
         "title": "Data Visualization",
         "items": [
-          "Python",
-          "Pandas",
-          "NumPy",
-          "Jupyter",
-          "EDA",
-          "Data Cleaning",
           "Matplotlib",
-          "Seaborn",
-          "Plotly"
+          "Exploratory Data Analysis",
+          "Data Interpretation"
         ]
       },
       "machineLearning": {
         "title": "Machine Learning",
         "items": [
-          "scikit-learn",
+          "Scikit-learn",
           "XGBoost",
           "Classification",
-          "Feature Engineering",
-          "Tree Models (Decision Trees, Random Forest)"
+          "Logistic Regression",
+          "K-Nearest Neighbours",
+          "Cross-validation",
+          "Model Evaluation",
+          "Statistical Testing"
         ]
       },
-      "frontend": {
-        "title": "Frontend",
+      "softwareWeb": {
+        "title": "Software & Web Technologies",
         "items": [
+          "JavaScript",
           "HTML",
           "CSS",
           "Tailwind CSS",
           "Bootstrap",
-          "JavaScript",
           "Responsive Design"
         ]
       },
@@ -156,17 +182,38 @@
           "Figma",
           "User Research",
           "Usability Testing",
-          "Heuristic Evaluation"
+          "Heuristic Evaluation",
+          "User-Centered Design",
+          "Prototyping",
+          "Research Methods",
+          "Accessibility Evaluation"
+        ]
+      },
+      "dataProcessing": {
+        "title": "Data Processing & Validation",
+        "items": [
+          "Data Cleaning",
+          "Data Transformation",
+          "Regex",
+          "PDF Text Extraction",
+          "Manual Validation",
+          "CSV / JSON"
         ]
       },
       "tools": {
-        "title": "Tools & Specialized",
+        "title": "Process Analytics & Tools",
+        "items": [
+          "Process Mining",
+          "Event Log Analysis",
+          "PM4Py",
+          "NetworkX"
+        ]
+      },
+      "versionControl": {
+        "title": "Version Control & Collaboration",
         "items": [
           "Git",
-          "Netlify",
-          "PM4Py",
-          "NetworkX",
-          "spaCy"
+          "GitHub"
         ]
       }
     }
@@ -176,15 +223,26 @@
     "subtitle": "Building solutions that matter",
     "liveDemo": "Live Demo",
     "items": {
-      "striveAI": {
-        "title": "StriveAI: Adaptive Learning Platform (Master's Thesis)",
-        "description": "Designed UX architecture for an AI-driven learning dashboard (adaptive algorithms: BKT, DKT) and GenAI-based generative nudges. Delivered final prototype and research recommendations.",
+      "thesis": {
+        "title": "Detecting Generative AI Declarations in DTU Master's Theses",
+        "description": "Built an end-to-end Python document analytics workflow to identify and validate explicit Generative AI declarations across DTU master's theses.",
         "bullets": [
-          "Evaluated adaptive algorithms (BKT, DKT) through behavioral data analysis",
-          "Designed nudge systems using GenAI",
-          "Created UX prototypes for student dashboards"
+          "Processed 943 analysable theses and 935 candidate passages",
+          "Combined PDF extraction, cleaning, regex rules, context windows and ambiguity guards",
+          "Manually validated evidence and compared rule-based results with an LLM classifier",
+          "Evaluated classification using agreement analysis, confusion matrices and statistical tests"
         ],
-        "tools": ["Python", "UX Research", "Figma", "GenAI"]
+        "tools": ["Python", "PDFMiner", "Regex", "Classification", "Statistical Analysis"]
+      },
+      "worldHappiness": {
+        "title": "World Happiness Report - Predictive Modelling",
+        "description": "Prepared structured data for supervised learning and compared Logistic Regression with K-Nearest Neighbours using rigorous model evaluation.",
+        "bullets": [
+          "Applied nested cross-validation for model selection and performance estimation",
+          "Used McNemar testing to compare model predictions",
+          "Visualized model performance and interpreted error patterns"
+        ],
+        "tools": ["Python", "Scikit-learn", "Matplotlib", "Cross-validation"]
       },
       "hoursly": {
         "title": "Hoursly: Time Tracking & Budgeting Web App",
@@ -198,14 +256,14 @@
         "tools": ["HTML", "CSS", "JavaScript", "Netlify"]
       },
       "processMining": {
-        "title": "Process Mining & Predictive Analytics",
-        "description": "Applied process mining to supply chain datasets, built classification models (Decision Tree, Random Forest, XGBoost) to predict delays, and conducted extensive exploratory data analysis.",
+        "title": "Apollo Mission Process Analysis",
+        "description": "Analysed NASA Apollo 1-17 mission event data across five mission phases using process mining and the Process Mining Project Methodology (PM²).",
         "bullets": [
-          "Process mining on supply chain event logs",
-          "Built Decision Tree, Random Forest, XGBoost models",
-          "Exploratory data analysis and feature engineering"
+          "Prepared mission data and represented activities as event logs",
+          "Mapped recurring mission flows and compared execution paths",
+          "Investigated timing variation, exceptional paths and operational deviations"
         ],
-        "tools": ["Python", "Scikit-learn", "PM4Py", "Pandas", "NumPy"]
+        "tools": ["Python", "PM4Py", "Process Mining", "Event Logs"]
       },
       "dataSecurity": {
         "title": "Data Security Research: Two-Factor Authentication & Phishing Detection",
@@ -232,7 +290,7 @@
   "contact": {
     "title": "Let's Work Together",
     "subtitle": "Where data, development, and design intersect",
-    "description": "I'm open to roles in Data Analytics, Frontend Development, or UX Research—especially where these areas overlap. If you think I could be a good fit for your team, I'd love to connect.",
+    "description": "I'm currently looking for opportunities in Data Analysis, especially work involving research data, complex datasets and applied machine learning. If you think I could be a good fit for your team, I'd love to connect.",
     "connectWith": "Connect With Me",
     "buttons": {
       "linkedin": "LinkedIn",

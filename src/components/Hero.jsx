@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import profileImage from '../images/Rasel.jpg'
+import profileImage from '../images/Avatar.png'
 import cv from '../cv/Resume_RM.pdf'
 
 const Hero = () => {
@@ -198,22 +198,6 @@ const Hero = () => {
               </a>
             </div>
             
-            {/* Role Badges */}
-            <div className="flex flex-wrap gap-2.5 mb-8 justify-center md:justify-start">
-              <span className="px-4 py-2 bg-gradient-to-r from-indigo-600 to-blue-600 text-white text-sm font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                {t('hero.badges.education')}
-              </span>
-              <span className="px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-sm font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                {t('hero.badges.analyst')}
-              </span>
-              <span className="px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-sm font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                {t('hero.badges.thesis')}
-              </span>
-              <span className="px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-500 text-white text-sm font-semibold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                {t('hero.badges.frontend')}
-              </span>
-              
-            </div>
           </div>
         </div>
 

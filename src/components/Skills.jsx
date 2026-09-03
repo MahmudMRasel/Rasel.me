@@ -35,19 +35,28 @@ const Skills = () => {
       skills: t('skills.categories.machineLearning.items', { returnObjects: true })
     },
     {
-      title: t('skills.categories.frontend.title'),
+      title: t('skills.categories.softwareWeb.title'),
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
-      skills: t('skills.categories.frontend.items', { returnObjects: true })
+      skills: t('skills.categories.softwareWeb.items', { returnObjects: true })
+    },
+    {
+      title: t('skills.categories.dataProcessing.title'),
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      ),
+      skills: t('skills.categories.dataProcessing.items', { returnObjects: true })
     },
     {
       title: t('skills.categories.uxResearch.title'),
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
       ),
       skills: t('skills.categories.uxResearch.items', { returnObjects: true })
@@ -61,6 +70,15 @@ const Skills = () => {
         </svg>
       ),
       skills: t('skills.categories.tools.items', { returnObjects: true })
+    },
+    {
+      title: t('skills.categories.versionControl.title'),
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v8m-4-4h8M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z" />
+        </svg>
+      ),
+      skills: t('skills.categories.versionControl.items', { returnObjects: true })
     }
   ]
 

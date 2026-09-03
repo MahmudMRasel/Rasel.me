@@ -8,10 +8,17 @@ const Projects = () => {
   
   const projects = [
     {
-      title: t('projects.items.striveAI.title'),
-      description: t('projects.items.striveAI.description'),
-      bullets: t('projects.items.striveAI.bullets', { returnObjects: true }),
-      tools: t('projects.items.striveAI.tools', { returnObjects: true }),
+      title: t('projects.items.thesis.title'),
+      description: t('projects.items.thesis.description'),
+      bullets: t('projects.items.thesis.bullets', { returnObjects: true }),
+      tools: t('projects.items.thesis.tools', { returnObjects: true }),
+      url: null
+    },
+    {
+      title: t('projects.items.worldHappiness.title'),
+      description: t('projects.items.worldHappiness.description'),
+      bullets: t('projects.items.worldHappiness.bullets', { returnObjects: true }),
+      tools: t('projects.items.worldHappiness.tools', { returnObjects: true }),
       url: null
     },
     {

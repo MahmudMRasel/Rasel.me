@@ -31,6 +31,14 @@ const Timeline = () => {
       type: "experience",
       bullets: t('timeline.experience.brixoptim.bullets', { returnObjects: true }),
       tools: t('timeline.experience.brixoptim.tools', { returnObjects: true })
+    },
+    {
+      date: t('timeline.education.bsc.date'),
+      title: t('timeline.education.bsc.title'),
+      company: t('timeline.education.bsc.company'),
+      type: "education",
+      selectedCourses: t('timeline.education.bsc.courses.selected', { returnObjects: true }),
+      allCourses: t('timeline.education.bsc.courses.all', { returnObjects: true })
     }
   ]
 

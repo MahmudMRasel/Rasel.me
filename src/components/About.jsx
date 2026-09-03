@@ -23,9 +23,14 @@ const About = () => {
         ref={contentRef}
         className={`glass rounded-xl p-8 md:p-10 backdrop-blur-lg hover:bg-white/40 transition-all scroll-reveal-scale mx-auto max-w-4xl mb-16 ${contentRevealed ? 'revealed' : ''}`}
       >
-        <p className="text-lg md:text-xl text-gray-700 leading-relaxed text-justify">
-          {t('about.description')}
-        </p>
+        <div className="space-y-5 text-lg md:text-xl text-gray-700 leading-relaxed">
+          {(Array.isArray(t('about.description', { returnObjects: true }))
+            ? t('about.description', { returnObjects: true })
+            : [t('about.description')]
+          ).map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
       </div>
     </section>
   )
