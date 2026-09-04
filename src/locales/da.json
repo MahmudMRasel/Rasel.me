@@ -8,11 +8,18 @@
     "hire": "Ansæt Mig"
   },
   "hero": {
-    "headline": "Rasel Mahmud — Dataanalytiker, der omsætter komplekse data til klare konklusioner.",
+    "headline": "Rasel Mahmud — Jeg gør komplekse data brugbare.",
     "roles": {
       "dataAnalysis": "Dataanalyse",
       "machineLearning": "Anvendt maskinlæring",
       "documentAnalytics": "Storskala dokumentanalyse"
+    },
+    "kicker": "Dataanalytiker med forskningsfokus",
+    "description": "Jeg bygger pålidelige analytiske workflows til komplekse data, fra udtræk og validering til modellering og klar fortolkning.",
+    "visual": {
+      "signal": "ANALYSEVÆRKTØJ",
+      "theses": "DOKUMENTER BEHANDLET",
+      "label": "UDTRÆK / VALIDER / FORKLAR"
     },
     "buttons": {
       "viewProjects": "Se projekter",
@@ -106,41 +113,38 @@
     "subtitle": "Værktøjer jeg arbejder med",
     "categories": {
       "analytics": {
-        "title": "Analytics",
+        "title": "Dataanalyse",
         "items": [
-          "Power BI (DAX, Power Query)",
-          "SQL",
+          "Python",
+          "Pandas",
+          "NumPy",
           "Excel",
-          "KPI Dashboards",
-          "Rapportering"
+          "Jupyter Notebook"
         ]
       },
       "dataVisualization": {
         "title": "Datavisualisering",
         "items": [
-          "Python",
-          "Pandas",
-          "NumPy",
-          "Jupyter",
-          "EDA",
-          "Datarensning",
           "Matplotlib",
-          "Seaborn",
-          "Plotly"
+          "Eksplorativ dataanalyse",
+          "Datatolkning"
         ]
       },
       "machineLearning": {
         "title": "Maskinlæring",
         "items": [
-          "scikit-learn",
+          "Scikit-learn",
           "XGBoost",
           "Klassificering",
-          "Feature Engineering",
-          "Træmodeller (Beslutningstræer, Random Forest)"
+          "Logistisk regression",
+          "K-nærmeste naboer",
+          "Krydsvalidering",
+          "Model-evaluering",
+          "Statistisk testning"
         ]
       },
-      "frontend": {
-        "title": "Frontend",
+      "softwareWeb": {
+        "title": "Software & webteknologier",
         "items": [
           "HTML",
           "CSS",
@@ -163,15 +167,29 @@
           "Tilgængelighedsevaluering"
         ]
       },
-      "tools": {
-        "title": "Værktøjer & Specialiseret",
+      "dataProcessing": {
+        "title": "Databehandling & validering",
         "items": [
-          "Git",
-          "Netlify",
-          "PM4Py",
-          "NetworkX",
-          "spaCy"
+          "Datarening",
+          "Datatransformation",
+          "Regex",
+          "PDF-tekstudtræk",
+          "Manuel validering",
+          "CSV / JSON"
         ]
+      },
+      "tools": {
+        "title": "Procesanalyse",
+        "items": [
+          "Procesmining",
+          "Hændelsesloganalyse",
+          "PM4Py",
+          "NetworkX"
+        ]
+      },
+      "versionControl": {
+        "title": "Versionsstyring & samarbejde",
+        "items": ["Git", "GitHub"]
       }
     }
   },

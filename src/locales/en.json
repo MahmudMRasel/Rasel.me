@@ -8,11 +8,18 @@
     "hire": "Hire Me"
   },
   "hero": {
-    "headline": "Rasel Mahmud — Data Analyst turning complex data into clear conclusions.",
+    "headline": "Rasel Mahmud — I make complex data useful.",
     "roles": {
       "dataAnalysis": "Data Analysis",
       "machineLearning": "Applied Machine Learning",
       "documentAnalytics": "Large-Scale Document Analytics"
+    },
+    "kicker": "Research-minded data analyst",
+    "description": "I build reliable analytical workflows for complex data, from extraction and validation to modelling and clear interpretation.",
+    "visual": {
+      "signal": "ANALYSIS ENGINE",
+      "theses": "DOCUMENTS PROCESSED",
+      "label": "EXTRACT / VALIDATE / EXPLAIN"
     },
     "buttons": {
       "viewProjects": "View Projects",

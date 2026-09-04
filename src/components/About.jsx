@@ -12,7 +12,7 @@ const About = () => {
       <div className="text-center mb-12">
         <h2 
           ref={titleRef}
-          className={`text-5xl md:text-6xl font-extrabold mb-4 scroll-reveal-up ${titleRevealed ? 'revealed' : ''}`}
+          className={`text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 scroll-reveal-up ${titleRevealed ? 'revealed' : ''}`}
         >
           <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-teal-500 bg-clip-text text-transparent">{t('about.title')}</span>
         </h2>
@@ -23,7 +23,7 @@ const About = () => {
         ref={contentRef}
         className={`glass rounded-xl p-8 md:p-10 backdrop-blur-lg hover:bg-white/40 transition-all scroll-reveal-scale mx-auto max-w-4xl mb-16 ${contentRevealed ? 'revealed' : ''}`}
       >
-        <div className="space-y-5 text-lg md:text-xl text-gray-700 leading-relaxed">
+        <div className="space-y-5 text-base md:text-lg text-gray-700 leading-relaxed text-justify">
           {(Array.isArray(t('about.description', { returnObjects: true }))
             ? t('about.description', { returnObjects: true })
             : [t('about.description')]

@@ -103,7 +103,7 @@ const Skills = () => {
         </div>
         
         {/* Title with gradient on hover */}
-        <h3 className="text-2xl font-bold mb-6 transition-colors duration-300 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-teal-600">
+        <h3 className="text-xl md:text-2xl font-bold mb-6 transition-colors duration-300 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-teal-600">
           {group.title}
         </h3>
         
@@ -129,7 +129,7 @@ const Skills = () => {
       <div className="text-center mb-16">
         <h2 
           ref={titleRef}
-          className={`text-5xl md:text-6xl font-extrabold mb-4 scroll-reveal-up ${titleRevealed ? 'revealed' : ''}`}
+          className={`text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 scroll-reveal-up ${titleRevealed ? 'revealed' : ''}`}
         >
           <span className="bg-gradient-to-r from-blue-600 via-blue-500 to-teal-500 bg-clip-text text-transparent">{t('skills.title')}</span>
         </h2>

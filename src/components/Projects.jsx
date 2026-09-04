@@ -67,10 +67,10 @@ const Projects = () => {
           </h3>
         </div>
         
-        <p className="text-gray-700 text-xs md:text-sm mb-3 leading-relaxed flex-grow">{project.description}</p>
+        <p className="text-gray-700 text-sm md:text-base mb-3 leading-relaxed flex-grow">{project.description}</p>
         
         {project.bullets && (
-          <ul className="list-none text-xs text-gray-600 space-y-1.5 mb-3">
+          <ul className="list-none text-sm text-gray-600 space-y-1.5 mb-3">
             {project.bullets.map((bullet, i) => (
               <li key={i} className="flex items-start">
                 <svg className="w-3.5 h-3.5 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -119,7 +119,7 @@ const Projects = () => {
       <div className="text-center mb-16">
         <h2 
           ref={titleRef}
-          className={`text-5xl md:text-6xl font-extrabold mb-4 scroll-reveal-up ${titleRevealed ? 'revealed' : ''}`}
+          className={`text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 scroll-reveal-up ${titleRevealed ? 'revealed' : ''}`}
         >
           <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 bg-clip-text text-transparent">{t('projects.title')}</span>
         </h2>

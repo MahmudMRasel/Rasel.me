@@ -116,7 +116,7 @@ const Hero = () => {
   }, [currentRole, isDeleting, currentRoleIndex, headlineComplete, roles])
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 overflow-hidden pt-20">
+    <section id="hero" className="hero-section relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50 to-slate-100 overflow-hidden pt-20">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
@@ -126,7 +126,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between z-10 relative gap-8">
         {/* Left side - Text content */}
-        <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0 order-2 md:order-1">
+        <div className="hero-copy md:w-1/2 text-center md:text-left mb-8 md:mb-0 order-2 md:order-1">
           <div className="glass rounded-3xl p-8 md:p-10 mb-6 backdrop-blur-md border border-white/20 shadow-lg">
             {/* One-time typing headline */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-4 text-gray-900 min-h-[100px] md:min-h-[120px]">
@@ -202,7 +202,7 @@ const Hero = () => {
         </div>
 
         {/* Right side - Profile picture with glassmorphism */}
-        <div className="md:w-1/2 flex justify-center items-center relative order-1 md:order-2">
+        <div className="hero-portrait md:w-1/2 flex justify-center items-center relative order-1 md:order-2">
           <div className="relative w-80 h-80 md:w-96 md:h-96">
             {/* Glowing background circles */}
             <div className="absolute inset-0 bg-blue-400 rounded-full blur-3xl opacity-30 animate-pulse-glow"></div>
@@ -228,10 +228,10 @@ const Hero = () => {
             </div>
 
             {/* Floating decorative elements */}
-            <div className="absolute -top-4 -right-4 w-16 h-16 glass rounded-full flex items-center justify-center animate-float" style={{ animationDelay: '1s' }}>
+            <div className="hero-orb absolute -top-4 -right-4 w-16 h-16 glass rounded-full flex items-center justify-center animate-float" style={{ animationDelay: '1s' }}>
               <div className="w-8 h-8 bg-blue-600 rounded-full"></div>
             </div>
-            <div className="absolute -bottom-4 -left-4 w-12 h-12 glass rounded-full flex items-center justify-center animate-float" style={{ animationDelay: '3s' }}>
+            <div className="hero-orb absolute -bottom-4 -left-4 w-12 h-12 glass rounded-full flex items-center justify-center animate-float" style={{ animationDelay: '3s' }}>
               <div className="w-6 h-6 bg-purple-600 rounded-full"></div>
             </div>
           </div>
