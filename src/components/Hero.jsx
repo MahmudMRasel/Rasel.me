@@ -133,6 +133,10 @@ const Hero = () => {
               {renderHeadline()}
               {showHeadlineCursor && <span className="animate-pulse">|</span>}
             </h1>
+
+            <p className="mb-5 text-lg md:text-xl font-semibold leading-snug text-slate-700">
+              {t('hero.tagline')}
+            </p>
             
             {/* Continuous looping roles */}
             <div className="mb-8 h-8 flex items-center justify-center md:justify-start">

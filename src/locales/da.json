@@ -8,7 +8,8 @@
     "hire": "Ansæt Mig"
   },
   "hero": {
-    "headline": "Rasel Mahmud — Jeg gør komplekse data brugbare.",
+    "headline": "Rasel Mahmud — Dataanalytiker",
+    "tagline": "Jeg omsætter komplekse data til klare indsigter og praktiske beslutninger.",
     "roles": {
       "dataAnalysis": "Dataanalyse",
       "machineLearning": "Anvendt maskinlæring",
