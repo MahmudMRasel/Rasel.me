@@ -8,7 +8,8 @@
     "hire": "Hire Me"
   },
   "hero": {
-    "headline": "Rasel Mahmud — I make complex data useful.",
+    "headline": "Rasel Mahmud — Data Analyst",
+    "tagline": "Turning complex data into clear insights and practical decisions.",
     "roles": {
       "dataAnalysis": "Data Analysis",
       "machineLearning": "Applied Machine Learning",
@@ -41,9 +42,9 @@
     "title": "About Me",
     "subtitle": "Who I am & what I do",
     "description": [
-      "My background in computer science has allowed me to work across software development, data analysis and research. I became particularly interested in understanding data, testing assumptions and explaining why a result occurs.",
-      "During my MSc in Computer Science and Engineering at DTU, I worked with machine learning, process mining, social data analysis and computational data science. My master's thesis took this further through a large-scale research project covering document processing, classification, manual validation and statistical evaluation.",
-      "I am now building my career in Data Analysis, with a focus on research data analysis and applied machine learning. My software development background helps me approach analytical problems with a structured, implementation-focused mindset."
+      "My background in computer science has allowed me to work across software development, data analysis, and research. I became particularly interested in exploring complex data, testing assumptions, and explaining why results occur.",
+      "During my MSc in Computer Science and Engineering at the Technical University of Denmark, I used Python, Pandas, and NumPy to clean, transform, and analyse complex datasets. I applied Scikit-learn for classification and model evaluation, Matplotlib to communicate analytical findings, and process mining techniques to investigate event logs and operational patterns. My master's thesis extended this experience through a large scale research project involving document processing, rule based classification, manual validation, and statistical evaluation.",
+      "I am now pursuing a career in data analytics, focusing on research data, applied machine learning, and data visualisation. I use Excel for structured analysis and reporting and am developing my Power BI skills to create interactive dashboards and meaningful KPI reports. My software development background helps me approach analytical problems with a structured, practical, and implementation focused mindset."
     ]
   },
   "timeline": {
